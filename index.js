@@ -67,22 +67,23 @@ function placeOrder(cardNumber) {
 
   function removeFromCart(item) {
     let placeO = 0;
+    let findI = 0;
     for (let array of cart) {
 
       for (let key in array) {
         console.log("item: " + key);
         if (key == item ) {
     //      console.log("found a match");
-          let findI = 0;
+          findI = 1;
   //        findI = cart.findIndex(k => k=='bananas');
   //        console.log(" found the index at " + findI);
           cart.splice(placeO,1);
   //        console.log(cart);
         } else {
-          console.log("That item is not in your cart.");
         }
 
       }
       placeO++;
     }
+    (findI ===0 ? console.log('That item is not in your cart.'): '');
   }
