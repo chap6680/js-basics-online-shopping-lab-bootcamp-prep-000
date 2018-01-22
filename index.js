@@ -75,11 +75,11 @@ function placeOrder(cardNumber) {
           console.log("found a match");
           let findI = 0;
   //        findI = cart.findIndex(k => k=='bananas');
-          console.log(" found the index at " + findI);
-          cart.slice(placeO,1);
-          console.log(cart);
+  //        console.log(" found the index at " + findI);
+          cart.splice(placeO,1);
+  //        console.log(cart);
         } else {
-          console.log("nothing");
+    //      console.log("nothing");
         }
 
       }
